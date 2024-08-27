@@ -1,0 +1,267 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.25rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 55px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.header-transparent {
+    background-color: rgba(51, 51, 51, 0.5); /* Use RGBA to set a transparent background color */
+    backdrop-filter: blur(20px); /* Add a blur effect for modern browsers */
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+}
+h1 {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial;
+    margin-left: 35px;
+    letter-spacing: 5px;
+}
+h1 span{
+    color: crimson;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Calibri;
+}
+nav a:hover {
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+/* Rest of your existing CSS */
+
+
+/* Rest of your existing CSS */
+section {
+    padding: 2rem;
+}
+
+#hero, #about, #services, #contact {
+    height: 100vh;
+}
+.typing-container {
+    width: 100%;
+    margin-top: 20px;
+}
+#hero {
+    background: linear-gradient(rgba(148, 87, 235, 0.5), rgba(148, 87, 235, 0.5)),url(./images/gero-bg.jpg);
+    background-size: cover;
+    background-position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+#hero h1 {
+    margin-bottom: 20px;
+    font-family: Calibri;
+    font-size: 5rem;
+}
+#hero p {
+    margin-bottom: 17px;
+    font-family: Calibri;
+    font-size: 25px;
+}
+.button{
+    width: 300px;
+    height: 70px;
+    background: #fff;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.button a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    font-color: #fff;
+}
+#services {
+    background-color: #eee;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#services h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-color: crimson;
+    width: 100%; /* Ensure h2 takes full width */
+    font-size: 2rem;
+    font-family: Arial Black;
+}
+.service {
+    width: 30%;
+    margin: 0 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    display: inline-block; /* Set display to inline-block */
+    vertical-align: top; /* Align elements to the top */
+}
+.service img {
+    max-width: 70%;
+    height: auto;
+    padding: 2px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    color: #007BFF;
+}
+#about {
+    background-color: #fff; /* Set a background color for the about section */
+    text-align: center;
+    border: 1px solid #000;
+}
+#about h2 {
+    text-align: center;
+    margin-top: 0.2em;
+    font-size: 2rem;
+    font-family: Arial Black;
+}
+.about-content {
+    max-width: 1000px; /* Set a maximum width for the content */
+    margin: 0 auto;
+    padding: 60px;
+}
+.about-content p{
+    text-align: justify;
+    line-height: 25px;
+    font-family: Calibri;
+}
+.about-content img{
+    width: 45rem;
+    height: 30rem;
+}
+/* Rest of your existing CSS */
+#contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    max-width: 1000px;
+    font-size: 1em;
+    margin-bottom: 40px;
+    margin-left: 360px;
+    text-align: center;
+    font-family: Calibri;
+    line-height: 35px;
+}
+
+#contact-form {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darken the color on hover */
+    transition: 0.5s ease;
+}
+
+.button {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #218838; /* Darken the color on hover */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

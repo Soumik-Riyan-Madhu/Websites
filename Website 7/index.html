@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+        <div class="header-content">
+            <h1><span>S</span>OUMIK <span>R</span>IYAN <span>M</span>ADHU</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">HOME</a> </li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="hero" class="full-height">
+        <h1><font color="#fff">Welcome To Our Company !</font></h1>
+            <p><font color="#fff">We Offer Innovative Solutions To Meet Your Needs</font></p>
+            <button class="button"><a href="#">CONTACT US</a></button>
+    </section>
+<section id="services" class="full-height">
+    <h2><b>Our Services</b></h2>
+    <div class="service">
+        <img src="./images/services1.jpg" alt="Service 1 Image">
+        <h3>FREELANCING</h3>
+        <p>We give the best workers for freelancing.</p>
+    </div>
+    <div class="service">
+        <img src="./images/services2.jpg" alt="Service 2 Image">
+        <h3>WEB DESIGN</h3>
+        <p>We give course on web designing. Also, extra pro-tips are given.</p>
+    </div>
+    <div class="service">
+        <img src="./images/services3.jpg" alt="Service 3 Image">
+        <h3>SOCIAL MEDIA MARKETING</h3>
+        <p>We give course on Social media marketing.</p>
+    </div>
+</section>
+    <section id="about">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Welcome to Soumik Riyan, where innovation meets excellence. At Soumik Riyan, we are passionate about some skills like: web designing, freelancing & social media marketing. With a dedicated team of experts and a commitment to delivering high-quality workers, we strive to give the best service.
+        Our journey began 2001, and since then, we have been on a mission to make our customers skilled. Through our services, we have established ourselves as a leader of technical skills, earning the trust and loyalty of our clients.
+        What sets us apart is our relentless pursuit of excellence, customer-centric approach, and a culture that fosters creativity and collaboration. We believe in trust, and these values guide us in every endeavor, ensuring that we consistently exceed expectations.
+        As we look to the future, we are excited about the possibilities and eager to take on new challenges. Join us on this journey as we continue to make you happy with our service.</p>
+    <img src="./images/about.png">
+    </div>
+</section>
+
+    <section id="contact" class="full-height">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us today! Have a question or want to learn more about our services? Our group will answer any questions you may have and help with you social media needs.
+        Simply fill out the form below with your name, e-mail & massage, and we'll be in touch shortly. We are excited to hear from you and help you achieve your goals !</p>
+    <form id="contact-form" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+    <button class="button"><a href="mailto:info@yourcompany.com">Email Us</a></button>
+</section>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var contactForm = document.getElementById("contact-form");
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // You can add additional validation here if needed
+
+            // Simulate a form submission by showing a confirmation message
+            showConfirmation();
+        });
+
+        function showConfirmation() {
+            // You can customize this confirmation message or redirect to a thank-you page
+            alert("Thank you for your message! We will get back to you soon.");
+
+            // Clear the form after submission if needed
+            contactForm.reset();
+        }
+    });
+</script>
+
+    <footer>
+        <p>Copyright &copy; 2023 Soumik Riyan. All rights reserved.</p>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>

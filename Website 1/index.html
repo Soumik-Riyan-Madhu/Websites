@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>Website 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  </head>
+  <body>
+    <section class="home" id="home">
+      <header class="header">
+        <a class="logo">Oindrila Nawomi</a>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      <h2>THANKS FOR VISITING ME!</h2>
+      <div class="typing-container">
+        <h3 id="typing-text"></h3>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2 class="heading">
+        <span>About</span> me
+      </h2>
+      <p>I am Oindrila Madhu Nawomi. I am 9 years old. I'm also a student in class 3 at Agrani School and College. I have keen interest in computer technology and aspire to become a software engineer in the future. My mother's name is Ripa Barai and my father's name is Shyamal Chandra Madhu. I want to start a YouTube channel. My goal is to become an entrepreneur or owner of a software company.</p>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span>
+      </h2>
+      <p>
+        <span>Get in touch with us today!</span> Have a <span>Question</span> or want to <span>learn more about Our Services</span>? Our group will answer any questions you may have and help with <span>your Social Media.</span> Simply fill out the form below with <span>Your Name, E-mail & Massage</span>, and we'll be in touch shortly. <span>We are excited to hear from you and help you achieve your goals.</span>
+      </p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Soumik | All Rights Reserved.
+        <p>
+          <span>E-Mail:</span> nawomi2015bd@gmail.com <span>Call:</span> +880 171 293 82 70 (Toll Free) <span>Location:</span> Dhaka, Bangladesh
+        </p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home">
+          <i class="bx bx-up-arrow-alt"></i>
+        </a>
+      </div>
+    </footer>
+    <script>
+      // Simulate a delay (e.g., loading data) and then show the content
+      setTimeout(function() {
+        document.querySelector('.loader-container').style.display = 'none';
+        document.body.style.overflow = 'visible';
+        document.querySelectorAll('.content').forEach(function(el) {
+          el.style.display = 'block';
+        });
+      }, 3000); // Adjust the delay time as needed
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

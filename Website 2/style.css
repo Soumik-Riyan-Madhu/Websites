@@ -1,0 +1,214 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: none;
+   outline: none;
+   scroll-behavior: smooth;
+   font-family: "Poppins", "sans-serif";
+   text-decoration: none;
+}
+html {
+   font-size: 40%;
+   overflow-x: hidden;
+}
+
+:root {
+   --bg-color: #080808;
+   --second-bg-color: #131313;
+   --text-color: #fff;
+   --main-color: #00ffee;
+}
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 4rem 5%;
+   background: rgba(0, 0, 0, 0.3);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.logo {
+   font-size: 5rem;
+   color: var(--text-color);
+   font-weight: 800;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+.logo:hover {
+   transform: scale(1.1);
+}
+.logo span {
+   text-shadow: 0 0 2rem var(--main-color);
+}
+.navbar a {
+   font-size: 3rem;
+   color: var(--text-color);
+   margin-left: 4rem;
+   font-weight: 500;
+   transition: 0.3s ease;
+   border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+   color: var(--main-color);
+   border-bottom: 3px solid var(--main-color);
+}
+section {
+   min-height: 100vh;
+   padding: 10rem 12%;
+}
+.home{
+   background: #000;
+}
+.content {
+    text-align: center;
+}
+.content h1 {
+    font-size: 130px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    margin-top: 15%;
+}
+.content h1:hover {
+    -webkit-text-stroke: 2px var(--text-color);
+    color: transparent;
+}
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.button{
+    width: 45rem;
+    height: 10rem;
+    border: none;
+    margin-left: 50em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.button a{
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+
+.button:hover{
+    background: transparent;
+    border: 1px solid #000;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.heading {
+   font-size: 8rem;
+   text-align: center;
+   margin: 5rem 0;
+   color: var(--text-color);
+}
+.about{
+   padding: 100px 15px;
+   background: var(--second-bg-color);
+   font-size: 20%;
+}
+.about p{
+   font-size: 3rem;
+   color: var(--text-color);
+   font-size: 3rem;
+   text-align: justify;
+   padding: 6rem;
+   max-width: 200rem;
+   margin-left: 15em;
+}
+.contact{
+   background: var(--bg-color);
+}
+.contact h2 {
+    margin-bottom: 3rem;
+}
+.contact p{
+    font-size: 3rem;
+    text-align: justify;
+    padding: 6rem;
+    max-width: 200rem;
+    margin-left: 20rem;
+}
+.contact form {
+    max-width: 200rem;
+    margin: 1rem auto;
+    text-align: top;
+    margin-bottom: 3rem;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: 1rem 0;
+}
+.contact form .input-box input {
+    width: 49%;
+}
+.contact form textarea {
+    resize: none;
+}
+.contact .btn {
+   display: inline-block;
+   padding: 1rem 2.8rem;
+   background: var(--main-color);
+   box-shadow: 0 0 25px var(--main-color);
+   border-radius: 4rem;
+   font-size: 1.6rem;
+   color: #000;
+   border: 2px solid transparent;
+   letter-spacing: 0.1rem;
+   font-weight: 600;
+   transition: 0.3s ease-in-out;
+   cursor: pointer;
+}
+
+.contact .btn:hover {
+   transform: scale(1.1);
+   box-shadow: 0 0 50px var(--main-color);
+}
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    margin-right: right;
+}
+::-webkit-scrollbar {
+   width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track {
+   background-color: var(--bg-color);
+   width: 10px;
+   height: 10px;
+}

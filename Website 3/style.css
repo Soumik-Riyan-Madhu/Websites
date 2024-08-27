@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+body{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(2.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul {
+    padding: 5px;
+    text-align: right;
+    position: absolute;
+    top: 2em;
+    right: 6em;
+    z-index: 0;
+}
+li {
+    padding: 5px;
+    display: inline;
+    margin-left: 15px;
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+a:hover {
+    color: #000;
+    background: #fff;
+}
+img {
+	margin-top: 20px;
+	margin-left: 5em; /* You may adjust this margin as needed */
+	width: 70px;
+	height: auto;
+	border-radius: 50%;
+}
+
+.main {
+	max-width: 1700px;
+	margin: auto;
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 80px;
+	letter-spacing: 5px;
+	font-family: Algerian;
+}
+.button{
+    width: 300px;
+    height: 80px;
+    border: none;
+    background: blue;
+    margin-bottom: 6px;
+    margin-left: 9em;
+    justify-content: center;
+    font-size: 20px;
+    font-color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.button:hover{
+    background: transparent;
+    border: 1px solid #fff;
+}
+.button a:hover{
+    background: none;
+    color: #fff;
+}

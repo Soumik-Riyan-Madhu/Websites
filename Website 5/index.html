@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 5</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .loader-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #3498db;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .loader {
+            border: 8px solid #fff;
+            border-top: 8px solid transparent;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        .loading-text {
+            font-size: 1.5rem;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* Hide content initially */
+        body {
+            overflow: hidden;
+        }
+        .content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <h1><span>S</span>oumik <span>R</span>iyan <span>M</span>adhu</h1>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home"><b>Home</b></a></li>
+                        <li><a href="#services" data-after="Services"><b>Services</b></a></li>
+                        <li><a href="#about" data-after="About"><b>About</b></a></li>
+                        <li><a href="#contact" data-after="Contact"><b>Contact</b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero container">
+            <div class="typing-container">
+                <h1 id="typing-text"></h1>
+                <button class="button"><a href="#services">GET STARTED</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="services container">
+            <h1><font color="#fff">SE</font><font color="#01A4C4">RVIC</font><font color="#fff">ES</font></h1>
+            <div class="service-item">
+                <h2><font color="#01A4C4">Web</font> Development</h2>
+                <p>I offer professional web development services to create responsive and dynamic websites tailored to your needs.</p>
+            </div>
+            <div class="service-item">
+                <h2>Graphic<font color="#01A4C4"> Design</font></h2>
+                <p>Bring your ideas to life with creative graphic design services, including logo design, branding, and digital illustrations.</p>
+            </div>
+            <!-- Add more service items as needed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+            <h1><font color="#fff">ABOUT</font><font color="#01A4C4"> ME</font></h1>
+            <p><font color="#fff">I am Soumik Riyan Madhu. I am a web designer and a coder
+               I read in class 8 in Engineering University School and College
+               I am a student. I am 12 years old. I was born in the year of 2010
+               on 11th April. My mother's name is Ripa
+               Barai. She is a housewife. My father's name is
+               Shyamal Chandra Madhu. He is a banker.
+               I also have a sister. Her name is Oindrila
+               Madhu Nawomi. She is 8 years old. She reads in Agrani School
+               and college in class one. I want to read in BUET (Bangladesh
+               University of Engineering Technology) Notordemn college
+               These are my glistening goals. I like computer technology.
+               I want to be a software engineer in the future. want to make
+               a YouTube channel. But my main goal is to be an Interpreter
+                or an owner of a Software Company.</font></p>
+        </div>
+    </section>
+<section id="contact">
+        <div class="contact container">
+            <h1><font color="#fff">CONTACT</font><font color="#01A4C4"> ME</font></h1>
+            <p><span>Get in touch with us today!</span> Have a <span>Question</span> or want to <span>learn
+                     more about Our Services</span>? Our group will answer any questions you may have and help with
+                     <span>your Social Media.</span> Simply fill out the form below with <span>Your Name, E-mail &
+                     Massage</span>, and we'll be in touch shortly. <span>We are excited to hear from you and help
+                     you achieve your goals.</span></p>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+        </div>
+</section>
+    <section id="footer">
+        <div class="footer container">
+            <p>Copyright © 2023 Soumik. All rights reserved</p>
+        </div>
+    </section>
+    <script>
+        // Simulate a delay (e.g., loading data) and then show the content
+        setTimeout(function() {
+            document.querySelector('.loader-container').style.display = 'none';
+            document.body.style.overflow = 'visible';
+            document.querySelectorAll('.content').forEach(function(el) {
+                el.style.display = 'block';
+            });
+        }, 3000); // Adjust the delay time as needed
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
